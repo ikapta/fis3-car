@@ -1,0 +1,58 @@
+@mixin submitbtn($bgcolor:#2096e9) {
+    background-color:$bgcolor;
+    font-size: 18px;
+    padding: 13px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    &:disabled {
+        background-color: #dcdcdc;
+        color: #000;
+    }
+}
+
+%submitbtn {
+    background-color: #2096e9;
+    font-size: 18px;
+    padding: 13px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    &:disabled {
+        background-color: #dcdcdc;
+        color: #000;
+    }
+}
+.resModal{
+    .success{
+      
+        font-size: 18px;
+        padding-top: 15px;
+        margin-bottom: 15px;
+        span{
+            vertical-align: middle;
+            display: inline-block;
+            width:30px;
+            height: 30px;
+            background: url('/img/common/gou-small.png') no-repeat ;
+            background-size: cover;
+        }
+    }
+    p{
+        .title{
+            display: inline-block;
+            width: 30%;
+            text-align: right;
+        }
+        .cont{
+            display: inline-block;
+            width: 60%;
+            text-align: left
+        }
+    }
+    
+}

@@ -1,0 +1,53 @@
+#navHeader {
+    background-color: #3d3d3d;
+    height: 90px;
+    .logotitle {
+        width: 210px;
+        float: left;
+        line-height: 90px;
+        font-size: 20px;
+        span {
+            &:nth-child(1) {
+                color: #fff;
+            }
+            &:nth-child(2) {
+                color: #fff;
+            }
+            &:nth-child(3) {
+                color: #8b8b8b;
+            }
+        }
+    }
+    .navbar {
+        float: left;
+        font-size: 16px;
+        margin-top: 26px;
+        margin-left: 160px;
+        a {
+            display: inline-block;
+            padding: 10px 0;
+            color: #8b8b8b;
+            transition: color .3s;
+            margin-right: 50px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active,
+            &:hover {
+                color: #2096e9;
+                border-bottom: 2px solid #2096e9;
+            }
+        }
+    } //end navbar
+    .userPart {
+        float: right;
+        font-size: 16px;
+        line-height: 90px;
+        .namesy {
+            color: #8b8b8b;
+        }
+        .logout {
+            color: #2096e9;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import '../common/base.scss';
+@import '../common/button.scss';
+.tips {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.maindata {
+    >div {
+        background-color: #fff;
+        padding: 15px 15px;
+        border-bottom: 1px solid #eee;
+    }
+    .title {
+        width: 30%;
+    }
+    input {
+        font-size: 16px;
+    }
+}
+
+.submitdiv {
+    margin: 40px 15px 0 15px;
+    button {
+         @include submitbtn();
+    }
+}

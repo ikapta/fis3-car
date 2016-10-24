@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>个人信息认证</title>
+    <link rel="stylesheet" href="/scss/user/veriyInfo_df53116.css" />
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="tips">*请如实填写以下信息，有利于提高审核通过率</div>
+        <div class="maindata">
+            <div class="item flex flex-align-center">
+                <span class="title">真实姓名</span>
+                <input type="text" maxlength="12" name="userName" placeholder="请输入真实姓名" value="">
+            </div>
+            <div class="item flex flex-align-center">
+                <span class="title">身份证号</span>
+                <input type="text" maxlength="18" name="certiNo" placeholder="请输入身份证号" value="">
+            </div>
+            <div class="item flex flex-align-center">
+                <span class="title">性别</span>
+                <div class="peosex"> <abbr title="男" class="active" data-sex="M">男</abbr> <abbr title="女" data-sex="F">女</abbr></div>
+            </div>
+            <div class="item flex flex-align-center">
+                <span class="title">出生年月日</span>
+                <input type="date" name="birthday" placeholder="" value="">
+            </div>
+        </div>
+
+        <div class="maindata mt15">
+            <div class="item flex flex-align-center">
+                <span class="title">现住房性质</span>
+                <select id="houseProperty"> 
+                    <option value="">选择</option>
+                    <option value="10">自购无贷款</option>
+                    <option value="20">自购有贷款</option>
+                    <option value="30">与父母同住</option>
+                    <option value="40">宅基地房</option>
+                    <option value="50">租房</option>
+                    <option value="60">军产房</option>
+                    <option value="70">小产房</option>
+                    <option value="99">其他</option>
+                </select>
+            </div>
+            <div class="item flex flex-align-center">
+                <span class="title">现住房详细地址</span>
+                <input type="text" name="detailAddress" placeholder="请输入现居地址(省市区)" value="">
+            </div>
+
+        </div>
+
+        <div class="maindata mt15">
+
+            <div class="item flex flex-align-center">
+                <span class="title">借记卡卡号</span>
+                <input type="text"  name="bankCardNo" placeholder="请输入银行卡号" value="">
+            </div>
+            <div class="item flex flex-align-center">
+                <span class="title">开户银行</span>
+                <select id="bankName"> 
+                    <option value="">选择</option>
+                    <option value="1">中国银行</option>
+                    <option value="2">建设银行</option>
+                    <option value="3">浦发银行</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="submitdiv">
+            <button type="button">下一步</button>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        
+    </div>
+    <!--footer-->
+    <!--error-->
+    <!--<div class="error hide"></div>-->
+<div class="error2 hide">
+    <img src="/img/common/alert-39.png"><span></span>
+</div>
+    <!--error-->
+<script src="/lib/jquery/jquery-2.1.4.min.js"></script>
+<script src="/static/js/veriyInfo_aio.js?d=1477296827556"></script>
+</body>
+
+</html>

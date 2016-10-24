@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <title>链车消费金融</title>
+    <meta name="title" content="CHAINCAR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <!--[if lte IE 9]>
+    <div class="iebrw alert alert-warning text-center" style="margin-bottom:0">
+    <p>你的浏览器不支持链车金服的一些新特性，请升级你的浏览器至<a href="http://se.360.cn/">360浏览器</a>或<a href="http://browsehappy.com/">Chrome</a>。
+    </p>
+    <p>IE9以下老了,现在就去升级体验吧...</p>
+    </div>
+    <script src='/js/common/html5.min.js'></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/scss/backend/backend.scss">
+    <link rel="stylesheet" href="/lib/font-awesome/font-awesome.min.css">
+    <script src="/lib/jquery/jquery-2.1.4.min.js"> </script>
+    <script src="/jscomponent/ajax.js"></script>
+    <script src="/jscomponent/utils.js"></script>
+    <script src="/jscomponent/validateUtil.js"></script>
+    <script src="/jsresource/backend/bgetuser.js"></script>
+
+</head>
+
+<body>
+    <!--start header-->
+    <link rel="import" href="/pages/component/bheader.tpl?__inline">
+    <!--end header-->
+
+    <div id="bindex">
+        <div class="content">
+            <div class="items">
+                <div class="item" onclick="window.location.href='/pages/backend/bcustomermanage.html'">
+                    <span class="imgs">
+                        <span class="cir"></span>
+                    <img src="/img/backend/geo.png" alt=""></span>
+                    <br>
+                    <span class="text">客户管理</span>
+                </div>
+                <div class="item active" onclick="window.location.href='/pages/backend/borederoperate.html'">
+                    <span class="imgs">
+                        <span class="cir "></span>
+                    <img src="/img/backend/file.png" alt=""></span>
+                    <br>
+                    <span class="text">订单管理</span>
+                </div>
+                <div class="item" onclick="window.location.href='/pages/backend/boperatdata.html'">
+                    <span class="imgs">
+                        <span class="cir"></span>
+                    <img src="/img/backend/circle.png" alt=""></span>
+                    <br>
+                    <span class="text">运营数据</span>
+                </div>
+                <!--<div class="clear"></div>-->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+             $('.items .item').hover(function(){
+                var $this=$(this);
+                if(!$this.hasClass('active')){
+                    $this.addClass('active').siblings().removeClass('active');
+                }
+                
+            })
+        })
+    </script>
+
+</body>
+
+</html>

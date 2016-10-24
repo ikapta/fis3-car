@@ -1,0 +1,22 @@
+{
+  "name": "消费金融",
+  "version": "1.0.0",
+  "description": "链车金服-消费金融",
+  "main": "fis-conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fis3"
+  ],
+  "author": "kapta",
+  "license": "ISC",
+  "devDependencies": {
+    "fis-optimizer-uglify-js": "^0.2.2",
+    "fis3": "^3.4.24",
+    "node-sass": "^3.10.1",
+    "fis3-parser-node-sass": "^0.1.9",
+    "fis3-postpackager-loader": "^2.1.3",
+    "fis3-preprocessor-autoprefixer": "^0.1.1"
+  }
+}

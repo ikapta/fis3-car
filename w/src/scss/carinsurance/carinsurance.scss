@@ -1,0 +1,94 @@
+@import '../common/base.scss';
+@import '../common/button.scss';
+
+.banner {
+    min-height: 100px;
+    padding-bottom: 15px;
+    background-color: #eee;
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.maindata {
+    background-color: #fff;
+    >div {
+        padding: 15px 15px;
+        border-bottom: 1px solid #eee;
+    }
+    .title {
+        width: 30%;
+        white-space: nowrap;
+    }
+    select {
+        width: 60%;
+        border: none;
+        font-size: 16px;
+        background: url('/img/common/drop.png?__inline') no-repeat right;
+        background-size: 13px 8px;
+        padding-right: 14px;
+        text-align: right;
+        option {
+            text-align: right
+        }
+    }
+     input{
+        //   min-width: 94px;
+            width:60%;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+}
+
+.submitdiv {
+    margin: 40px 15px 0 15px;
+    button {
+         @include submitbtn();
+    }
+}
+
+.inputGroup {
+    border: 1px solid #2096e9;
+    position: relative;
+    height: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    vertical-align: top;
+    span.opration {
+        padding-top: 4px;
+        vertical-align: top;
+        width: 30px;
+        display: inline-block;
+        text-align: center;
+        font-size: 18px;
+        color: #2096e9;
+        height: 100%;
+        border: none;
+        &:nth-of-type(1) {
+            left: 0;
+            border-right: 1px solid #2096e9;
+            // background: url(/img/common/minus.png) no-repeat;
+        }
+        &:nth-of-type(3) {
+            height: 100%;
+            border-left: 1px solid #2096e9;
+            // background: url(/img/common/plus.png) no-repeat;
+        }
+    }
+    span.value {
+        height: 100%;
+        margin-top: -5px;
+    }
+    input {
+        height: 100%;
+        outline: none;
+        border: none;
+        width: 100px;
+        text-align: center;
+        font-size: 16px;
+    }
+}

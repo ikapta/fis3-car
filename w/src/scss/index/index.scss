@@ -1,0 +1,75 @@
+@import '../common/base.scss';
+body {
+    max-width: 750px;
+}
+
+.content {
+    padding: 20px;
+    background-color: #f1f0f0;
+    height: auto;
+    .banner {
+        &.car {
+            background: url('/img/common/hcar.png') no-repeat;
+            background-size: cover;
+        }
+        &.house {
+            background: url('/img/common/hhouse.png') no-repeat;
+            background-size: cover;
+        }
+        font-size: 32px;
+        margin-bottom: 35px;
+        padding-top: 65px;
+        .border {
+            border: 1px solid rgba(#fff, .8);
+            width: 388px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        .title {
+            background-color: rgba(#fff, .8);
+            font-size: 30px;
+            padding: 68px 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .bottom{
+            background-color: rgba(#fff, .8);
+            padding: 25px 10px;
+            margin-top: 65px;
+            font-size: 22px;
+        }
+    }
+    .subtitle {
+        font-size: 28px;
+        margin: 35px 0 28px 0;
+    }
+    .subbanner {
+        margin-top: 35px;
+        .item {
+            width: 350px;
+            padding: 45px 0;
+            border-radius: 4px;
+            &.left {
+                float: left;
+                background: url('/img/common/query1.png') no-repeat;
+                background-size: cover;
+            }
+            &.right {
+                float: right;
+                background: url('/img/common/query2.png') no-repeat;
+                background-size: cover;
+            }
+            .border {
+                border: 1px solid rgba(#fff, .8);
+                width: 195px;
+                height: 65px;
+                line-height: 65px;
+                font-size: 28px;
+                color: rgba(#fff, .8);
+                margin: 0 auto;
+                text-align: center;
+
+            }
+        }
+    }
+}

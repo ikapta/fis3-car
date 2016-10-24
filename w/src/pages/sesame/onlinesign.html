@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>线上签约</title>
+
+    <link rel="stylesheet" href="/scss/sesame/onlinesign.scss">
+
+    <script src="/lib/jquery/jquery-2.1.4.min.js"> </script>
+    <script src="/jscomponent/ajax.js"></script>
+    <script src="/jscomponent/utils.js"></script>
+    <script src="/jscomponent/validateUtil.js"></script>
+    <style>
+        .promisedesc p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="maindata">
+            <!--<div class="title">分期产品</div>-->
+            <div class=" table">
+                <div class=" flex tableheader">
+                    <span class="flex-1">合同Id</span>
+                    <span class="flex-1">001</span>
+                    <span class="flex-1">002</span>
+                    <span class="flex-1">003</span>
+                </div>
+                <div class="flex">
+                    <span class="flex-1">合同名称</span>
+
+                    <span class="flex-1">《借款项目发布通知书》</span>
+                    <span class="flex-1">《委托支付协议》</span>
+                    <span class="flex-1">《贷后管理承诺书》</span>
+                </div>
+                <div class="flex">
+                    <span class="flex-1">签约状态</span>
+                    <span class="flex-1">未签约</span>
+                    <span class="flex-1">未签约</span>
+                    <span class="flex-1">未签约</span>
+                </div>
+                <div class="flex opt">
+                    <span class="flex-1">操作</span>
+                    <span class="flex-1"><a href="">阅读</a></span>
+                    <span class="flex-1"><a href="">阅读</a></span>
+                    <span class="flex-1"><a href="">阅读</a></span>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="gap"></div>
+        <div class="maindata ">
+            <div style="text-align:center;margin-bottom:10px;">贷款承诺书</div>
+            <div class="promisedesc">
+                <p>根据与贵公司签署的借款合同，本人现将相关事项承诺如下：</p>
+                <p>一.本人自愿申请分期，并自己使用，本人申请贷款所提供的资料是真实有效的; </p>
+                <p>二.本人承诺按照合同约定的用途使用贷款资金，不将贷款资金挪作他用;若有违反，产生的责任由本人承担;</p>
+                <p>三.不以自己的名义为他人获得贷款，即不能将贷款资金转借他人使用;若违反此项规定，将贷款转借他人，则因此产生的责任及贷款风险将由本人承担;</p>
+                <p>四.本人已知晓此笔贷款每月还款日及还款金额，并承诺在每月还款日当天16：00之前，按时将当月应还贷款本息存入相应还款账户(还款账号： )中，并授权银行从该账户扣收当月应还贷款本息;若因未按时还款产生的责任，将由本人承担;
+                </p>
+                <p>五.本人已于<span class="cyear"></span>年<span class="cmonth"></span>月<span class="cday"></span>日收到已签署联保协议书，并于--年--月--日收到贷款合同(支用单)、借据、放款单、还款计划表各一份(贷款合同号为：
+                    );经本人确认实际发放金额与贷款合同(支用单)金额相符，放款存折由本人开立并自行保管，联保协议书、贷款合同(支用单)、借据、放款单本人均已亲笔签字确认;</p>
+                <p>六.本人已同意并签署借款合同，且全部知晓并充分理解合同中规定应尽的担保及联保责任及相关义务。</p>
+                <p>本人已了解并承诺遵守上述事项，如违反以上事项，本人愿意承担相应的法律责任。</p>
+            </div>
+        </div>
+
+        <div class="submitdiv">
+            <button type="button">同意</button>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <link rel="import" href="/pages/component/footer.tpl?__inline">
+    </div>
+    <!--footer-->
+    <!--error-->
+    <link rel="import" href="/pages/component/error.tpl?__inline">
+    <!--error-->
+    <script>
+        $(function(){
+            $('.submitdiv button').click(function(){
+                var oid=CARUTILS.getParameter('orderId');
+                if(oid){
+                    window.location.href='ressign.html?orderId='+oid;
+                }else{
+                    VALIDATEUTIL.showErrorMsg('订单id丢失，无法查询');
+                }
+            })
+
+            var now =new Date();
+            $('.cyear').text(now.getFullYear());
+            $('.cmonth').text(now.getMonth() + 1);
+            $('.cday').text(now.getDate());
+        })
+    </script>
+</body>
+
+</html>

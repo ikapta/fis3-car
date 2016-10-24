@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>订单详情</title>
+
+    <link rel="stylesheet" href="/scss/order/orderdetail.scss">
+
+    <script src="/jscomponent/jquery-2.1.4.min.js"> </script>
+    <script src="/jscomponent/ajax.js"></script>
+    <script src="/jscomponent/utils.js"></script>
+    <script src="/jscomponent/validateUtil.js"></script>
+
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="maindata">
+            <div class="flex flex-pack-justify">
+                <span class="title">订单产品</span>
+                <span class="merName"></span>
+            </div>
+            <div class="flex flex-pack-justify">
+                <span class="title">订单编号</span>
+                <span class="orderId"></span>
+            </div>
+            <div class="flex flex-pack-justify">
+                <span class="title">订单金额</span>
+                <span class="applyAmt"></span>
+            </div>
+        </div>
+        <div class="payway flex flex-pack-justify">
+            <span class="header">分期方式</span>
+            <span class="wayname"></span>
+        </div>
+        <div class="submitdiv">
+            <button type="button" onclick="window.location.href='deferdesc.html'" >立即分期</button>
+        </div>
+        <!--<a class="paylink" href="####">官网付款</a>-->
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <link rel="import" href="/pages/component/footer.tpl?__inline">
+    </div>
+    <!--footer-->
+    <!--error-->
+    <link rel="import" href="/pages/component/error.tpl?__inline">
+    <!--error-->
+    <script src="/jsresource/order/orderdetail.js"></script>
+</body>
+
+</html>

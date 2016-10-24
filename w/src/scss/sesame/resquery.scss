@@ -1,0 +1,62 @@
+@import '../common/base.scss';
+@import '../common/button.scss';
+@import '../common/modal.scss';
+
+.content{
+    background-color: #eee;
+    position: relative;
+}
+.mt15{
+    margin-top: 15px;
+}
+.tips{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+}
+.maindata {
+    background-color: #fff;
+    >div {
+        padding: 15px 15px;
+        border-bottom: 1px solid #eee;
+    }
+    .title {
+        width: 30%;
+        white-space: nowrap;
+    }
+    select {
+       width: 100%;
+        border: none;
+        font-size: 14px;
+        background: url('/img/common/drop.png?__inline') no-repeat right;
+        background-size: 13px 8px;
+        padding-right: 14px;
+        text-align: right;
+        option {
+            text-align: right
+        }
+    }
+    .item{
+        font-size: 14px;
+        .title{
+            width: 45%;
+            padding-right:15px; 
+            text-align: right;
+        }
+        input{
+            width:100%;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+ 
+    }
+}
+
+.submitdiv {
+   margin: 40px 15px 0 15px;
+   padding-bottom: 15px;
+    button {
+       @include submitbtn;
+    }
+}

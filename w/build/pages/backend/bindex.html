@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <title>链车消费金融</title>
+    <meta name="title" content="CHAINCAR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <!--[if lte IE 9]>
+    <div class="iebrw alert alert-warning text-center" style="margin-bottom:0">
+    <p>你的浏览器不支持链车金服的一些新特性，请升级你的浏览器至<a href="http://se.360.cn/">360浏览器</a>或<a href="http://browsehappy.com/">Chrome</a>。
+    </p>
+    <p>IE9以下老了,现在就去升级体验吧...</p>
+    </div>
+    <script src='/js/common/html5.min.js'></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/scss/backend/backend_7735714.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/font-awesome.min.css" />
+</head>
+
+<body>
+    <!--start header-->
+    <header id="navHeader">
+    <div class="content">
+        <div class="logotitle">
+            <span>链车分期</span>
+            <span>|</span>
+            <span>商户端</span>
+        </div>
+
+        <div class="navbar">
+            <a href="/pages/backend/bindex.html"  class="bbindex">首  页</a>
+            <a href="/pages/backend/bcustomermanage.html" class="bbcustomermanage">客户管理</a>
+            <a href="/pages/backend/borederoperate.html" class="bborederoperate">订单管理</a>
+            <a href="/pages/backend/boperatdata.html" class="bboperatdata">运营数据</a>
+        </div>
+
+        <div class="userPart">
+            <a href="####" class="">
+                <i class="fa fa-user namesy" aria-hidden="true"></i>
+                <span class="uname namesy"></span>
+                <span class="logout">退出</span>
+            </a>
+        </div>
+    </div>
+
+</header>
+    <!--end header-->
+
+    <div id="bindex">
+        <div class="content">
+            <div class="items">
+                <div class="item" onclick="window.location.href='/pages/backend/bcustomermanage.html'">
+                    <span class="imgs">
+                        <span class="cir"></span>
+                    <img src="/img/backend/geo.png" alt=""></span>
+                    <br>
+                    <span class="text">客户管理</span>
+                </div>
+                <div class="item active" onclick="window.location.href='/pages/backend/borederoperate.html'">
+                    <span class="imgs">
+                        <span class="cir "></span>
+                    <img src="/img/backend/file.png" alt=""></span>
+                    <br>
+                    <span class="text">订单管理</span>
+                </div>
+                <div class="item" onclick="window.location.href='/pages/backend/boperatdata.html'">
+                    <span class="imgs">
+                        <span class="cir"></span>
+                    <img src="/img/backend/circle.png" alt=""></span>
+                    <br>
+                    <span class="text">运营数据</span>
+                </div>
+                <!--<div class="clear"></div>-->
+            </div>
+        </div>
+    </div>
+
+<script src="/lib/jquery/jquery-2.1.4.min.js"></script>
+<script src="/static/js/bindex_aio.js?d=1477296827539"></script>
+<script>
+    $(function(){
+    if(window.location.href.indexOf('bindex')>-1){
+        $('.bbindex').addClass('active');
+    }
+    if(window.location.href.indexOf('bcustomermanage')>-1){
+        $('.bbcustomermanage').addClass('active');
+    }
+    if(window.location.href.indexOf('borederoperate')>-1){
+        $('.bborederoperate').addClass('active');
+    }
+    if(window.location.href.indexOf('boperatdata')>-1){
+        $('.bboperatdata').addClass('active');
+    }
+})
+
+
+        $(function(){
+             $('.items .item').hover(function(){
+                var $this=$(this);
+                if(!$this.hasClass('active')){
+                    $this.addClass('active').siblings().removeClass('active');
+                }
+                
+            })
+        })
+    </script>
+</body>
+
+</html>

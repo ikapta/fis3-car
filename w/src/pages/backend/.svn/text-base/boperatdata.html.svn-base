@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <title>链车消费金融</title>
+    <meta name="title" content="CHAINCAR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" />
+    <!--[if lte IE 9]>
+    <div class="iebrw alert alert-warning text-center" style="margin-bottom:0">
+    <p>你的浏览器不支持链车金服的一些新特性，请升级你的浏览器至<a href="http://se.360.cn/">360浏览器</a>或<a href="http://browsehappy.com/">Chrome</a>。
+    </p>
+    <p>IE9以下老了,现在就去升级体验吧...</p>
+    </div>
+    <script src='/js/common/html5.min.js'></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/scss/backend/backend.scss">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <script src="/jscomponent/jquery-2.1.4.min.js"> </script>
+    <script src="/jscomponent/ajax.js"></script>
+    <script src="/jscomponent/utils.js"></script>
+    <script src="/jscomponent/validateUtil.js"></script>
+    <script src="/jsresource/backend/bgetuser.js"></script>
+
+</head>
+
+<body>
+    <!--start header-->
+    <link rel="import" href="/pages/component/bheader.tpl?__inline">
+    <!--end header-->
+
+    <div id="boptdata">
+        <div class="content">
+            <div class="itemwrap">
+                <div class="items clear">
+                    <div class="item">
+                        <h3>总营业额</h3>
+                        <p>10,100086,00</p>
+                    </div>
+                    <div class="item">
+                        <h3>本月成交总额</h3>
+                        <p>10,100086,00</p>
+                    </div>
+                    <div class="item">
+                        <h3>昨日成交总额</h3>
+                        <p>10,100086,00</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="tabcont">
+                <div class="tabheader clear">
+                    <span class="th">交易分布</span>
+                    <span class="thclick active">总交易额</span>
+                    <span class="thclick">月交易额</span>
+                </div>
+                <div class="tabbody t1">
+                    <div class="tabitem">
+                        <img src="/img/backend/pie.jpg" alt="">
+
+                    </div>
+
+                    <div class="tabitem hide">
+                        <img src="/img/backend/pie.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tabcont">
+                <div class="tabheader clear">
+                    <span class="th">增长曲线</span>
+                    <span class="thclick active">本周</span>
+                    <span class="thclick">本月</span>
+                </div>
+                <div class="tabbody t2">
+                    <div class="tabitem">
+                        <img src="/img/backend/line.jpg" alt="">
+
+                    </div>
+
+                    <div class="tabitem hide">
+                        <img src="/img/backend/line.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    $(function(){
+        $('.thclick').click(function(){
+            var $this=$(this);
+            var $parent=$this.parent().parent().find('.tabbody .tabitem');
+            var $index=$this.index();
+            $this.addClass('active').siblings().removeClass('active');
+            $parent.eq($index-1).removeClass('hide').siblings().addClass('hide');
+        })
+    })
+</script>
+
+</body>
+
+</html>

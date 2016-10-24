@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>个人信息认证</title>
+
+    <link rel="stylesheet" href="/scss/user/applydata.scss">
+
+    <script src="/lib/jquery/jquery-2.1.4.min.js"> </script>
+    <script src="/jscomponent/ajax.js"></script>
+    <script src="/jscomponent/utils.js"></script>
+    <script src="/jscomponent/validateUtil.js"></script>
+
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="tips">*请如实填写以下信息，有利于提高审核通过率</div>
+        <div class="maindata">
+            <div class="item flex flex-align-center">
+                <span class="title">本人工作单位</span>
+                <input type="text" name="company" placeholder="请输入单位名称" value="">
+            </div>
+            <div class="item flex flex-align-center">
+                <span class="title">本人工作地址</span>
+                <input type="text" name="companyAddress" placeholder="请输入单位地址" value="">
+            </div>
+             <div class="item flex flex-align-center">
+                <span class="title">工作单位电话</span>
+                <input type="text" name="companyPhone" placeholder="请输入单位座机" value="">
+            </div>
+            
+        </div>
+
+        <div class="maindata mt15">
+
+            <div class="item flex flex-align-center">
+                <span class="title">紧急联系人</span>
+                <input type="text" name="emergencyContact1" placeholder="请输入紧急联系人姓名" value="">
+            </div>
+             <div class="item flex flex-align-center">
+                <span class="title">紧急联系人电话</span>
+                <input type="text" name="contact1Phone" placeholder="请输入紧急联系人电话" value="">
+            </div>
+             <div class="item flex flex-align-center">
+                <span class="title">紧急联系人地址</span>
+                <input type="text" name="contact1Address" placeholder="请输入紧急联系人详细地址" value="">
+            </div>
+            <div class="item flex flex-align-center">
+                <span class="title">紧急联系人关系</span>
+                <select id="contact1Relation"> 
+                    <option value="">选择</option>
+                    <option value="01">父母</option>
+                    <option value="02">子女及兄弟姐妹</option>
+                    <option value="03">同事</option>
+                    <option value="04">同学</option>
+                    <option value="05">朋友</option>
+                    <option value="99">其他</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="submitdiv">
+            <button type="button">下一步</button>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <link rel="import" href="/pages/component/footer.tpl?__inline">
+    </div>
+    <!--footer-->
+    <!--error-->
+    <link rel="import" href="/pages/component/error.tpl?__inline">
+    <!--error-->
+    <script src="/jsresource/user/applydata.js"></script>
+</body>
+
+</html>

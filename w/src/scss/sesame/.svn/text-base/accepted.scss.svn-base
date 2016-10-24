@@ -1,0 +1,40 @@
+@import '../common/base.scss';
+@import '../common/button.scss';
+
+.content{
+    background-color: #fff;
+}
+.maindata {
+    padding: 15px 15px;
+    img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        // width: 30%;
+        @media (max-width:360px){
+            width: 30%
+        }
+        
+    }
+    div.desc{
+        text-align: center;
+        margin-top: 30px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+
+ 
+}
+.service{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 45%;
+}
+
+.submitdiv {
+    margin: 40px 15px 0 15px;
+    button {
+          @include submitbtn;
+    }
+}

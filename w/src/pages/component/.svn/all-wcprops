@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/chaincar/!svn/ver/8344/trunk/chaincar_cf_web/w/src/pages/component
+END
+waiting.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/chaincar/!svn/ver/8194/trunk/chaincar_cf_web/w/src/pages/component/waiting.tpl
+END
+error.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/chaincar/!svn/ver/8193/trunk/chaincar_cf_web/w/src/pages/component/error.tpl
+END
+bheader.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/chaincar/!svn/ver/8393/trunk/chaincar_cf_web/w/src/pages/component/bheader.tpl
+END
+footer.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/chaincar/!svn/ver/8193/trunk/chaincar_cf_web/w/src/pages/component/footer.tpl
+END

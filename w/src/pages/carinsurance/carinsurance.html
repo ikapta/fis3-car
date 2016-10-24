@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>车险商户分期</title>
+
+    <link rel="stylesheet" href="/scss/carinsurance/carinsurance.scss">
+
+    <script src="/lib/jquery/jquery-2.1.4.min.js"> </script>
+    <script src="/lib/lodash.min.js"></script>
+    <script src="/jscomponent/ajax.js"></script>
+    <script src="/jscomponent/utils.js"></script>
+    <script src="/jscomponent/validateUtil.js"></script>
+
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="banner">
+            <img src="/img/common/carbanner.png" alt="">
+        </div>
+        <div class="maindata">
+            <div class="flex flex-pack-justify">
+                <span class="title">保险公司</span>
+                <select id="insuranceCompany"> 
+                    <option value="">选择</option>
+                  
+                </select>
+            </div>
+             <div class="flex flex-pack-justify">
+                <span class="title">产品名称</span>
+                <select id="productName"> 
+                    <option value="">选择</option>
+                  
+                </select>
+            </div>
+            <div class="flex flex-pack-justify">
+                <span class="title">分期期数</span>
+                <select id="time"> 
+                    <option value="">选择</option>
+                </select>
+            </div>
+            <div class="flex flex-pack-justify flex-align-center">
+                <span class="title">保单价格</span>
+                <div class="inputGroup">
+                    <span class="minus opration"><img src="/img/common/minus.png" alt=""></span>
+                    <span class="value"><input type="text" id="carPrice" name="price" value="1000"></span>
+                    <span class="plus opration"><img src="/img/common/plus.png" alt=""></span>
+                </div>
+            </div>
+              <!--<div class="flex flex-pack-justify">
+                <span class="title">车险价格</span>
+                <input type="text" readonly class="showprice" />
+            </div>-->
+            <div class="flex flex-pack-justify">
+                <span class="title">月利率</span>
+                <input type="text" readonly class="showrate"/>
+            </div>
+
+        </div>
+        <div class="submitdiv">
+            <button type="button">确定下单</button>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <link rel="import" href="/pages/component/footer.tpl?__inline">
+    </div>
+    <!--footer-->
+    <!--error-->
+    <link rel="import" href="/pages/component/error.tpl?__inline">
+    <!--error-->
+    <script src="/jsresource/carinsurance/carinsurance.js"></script>
+</body>
+
+</html>

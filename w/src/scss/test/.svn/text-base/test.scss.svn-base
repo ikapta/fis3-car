@@ -1,0 +1,9 @@
+@import '../common/base.scss';
+
+body{
+    background-color:#999;
+    a{
+        color: red;
+        font-size: 12px;
+    }
+}
